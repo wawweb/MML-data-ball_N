@@ -15,7 +15,7 @@ $mainWord_2: #000000;
 //header
 $header_BG: linear-gradient(to top,#2665c4 0%,#1d3e8d 100%);
 $header_Hover: linear-gradient(to bottom,#2665c4 0%,#1d3e8d 100%);
-$header_Word: #ffffff;
+$header_Word: #000000;
 $header_Border: #e3aa57;
 
 $header_Info_logoBG: linear-gradient(to top,#dadada 0%,#ffffff 100%);
@@ -23,9 +23,9 @@ $header_Info_logoBG: linear-gradient(to top,#dadada 0%,#ffffff 100%);
 //home
 $home_BG: #e6e6e6;
 $home_innerBG: #f5f5f5;
-$home_OuterBorder: #ffffff;
+$home_OuterBorder: #946938;
 $home_Shadow: #0000002a;
-$home_TitleBG: linear-gradient(to right,#189ee4 0%,#0d4c94 15%,#1a296a 30%,#1a296a 57%,#8706bd 78% ,#1b3297 100%);
+$home_TitleBG: #cb0000;
 $home_Title: #ffffff;
 
 $home_Account_WordBG: #d9d9d9;
@@ -54,8 +54,8 @@ $marquee_Border: #c59248;
 $marquee_Word: #242424;
 
 //info
-$info_BG: #3c3656;
-$info_innerBG: #221e36;
+$info_BG: #ffffff;
+$info_innerBG: #363636;
 $info_innerBG2: #ffffff;
 $info_Shadow: #00000042;
 $info_BottomWord: #ffffff;

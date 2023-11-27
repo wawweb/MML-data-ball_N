@@ -19,7 +19,7 @@
             width: 1000px;
             height: auto;
             background: $info_BG;
-            border: 1px solid $home_OuterBorder;
+            border: 2px solid $home_OuterBorder;
             border-radius: 10px;
             box-shadow: 0 0 10px 2px $info_Shadow;
             box-sizing: border-box;
@@ -47,7 +47,6 @@
                     color: $header_Word;
                     font-size: 26px;
                     font-weight: bold;
-                    filter: drop-shadow(0px 0px 10px #ff8854) contrast(200%);
                 }
             }
 
@@ -66,7 +65,7 @@
                     width: 100%;
                     height: auto;
                     box-sizing: border-box;
-                    padding: 0 16px;
+                    padding: 16px;
 
                     //標頭
                     .name {
@@ -74,6 +73,7 @@
                         height: 50px;
                         display: flex;
                         align-items: center;
+                        background: #cb0000;
 
                         li {
                             color: $info_immediate_Title;
@@ -166,7 +166,6 @@
                         height: auto;
                         display: flex;
                         justify-content: space-between;
-                        margin-bottom: 20px;
                         position: relative;
 
                         button {
@@ -681,183 +680,7 @@
         transform: translateX(-50%);
         animation: flash_1 20s ease-out infinite;
     }
-    // 背景圓
-    .bgCircle {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 264px;
-        left: 50%;
-        transform: translateX(-50%);
-        @keyframes circle_1 {
-            0% {
-                transform:translate(-50%, -50%);
-            }
-            20% {
-                transform:translate(-51%, -49%);
-            }
-            40% {
-                transform:translate(-50%, -53%);
-            }
-            60% {
-                transform:translate(-47%, -52%);
-            }
-            80% {
-                transform:translate(-49%, -51%);
-            }
-            100% {
-                transform:translate(-50%, -50%);
-            }
-        }
-        @keyframes circle_2 {
-            0% {
-                transform:translate(-50%, -50%);
-            }
-            20% {
-                transform:translate(-49%, -50%);
-            }
-            40% {
-                transform:translate(-50%, -53%);
-            }
-            60% {
-                transform:translate(-48%, -51%);
-            }
-            80% {
-                transform:translate(-49%, -51%);
-            }
-            100% {
-                transform:translate(-50%, -50%);
-            }
-        }
-        @keyframes around_1 {
-            0% {
-                transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-            }
-            50% {
-                transform: translate(-47%, -54%) rotateX(-5deg) rotateY(0deg) rotateZ(-5deg);
-            }
-            100% {
-                transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-            }
-        }
-        .circle1 {
-            width: 122px;
-            height: 88px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_1 12s linear 0s infinite;
-        }
-        .circle2 {
-            width: 179px;
-            height: 109px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_2 10s linear 1s infinite;
-        }
-        .circle3 {
-            width: 396px;
-            height: 254px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_1 12s linear 0s infinite;
-        }
-        .circle4 {
-            width: 479px;
-            height: 289px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_2 11.8s linear 0s infinite;
-        }
-        .circle5 {
-            width: 646px;
-            height: 391px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_1 12s linear 0s infinite;
-        }
-        .circle6 {
-            width: 1047px;
-            height: 631px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_2 11.8s linear 0s infinite;
-        }
-        .circle7 {
-            width: 1263px;
-            height: 763px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_1 12s linear 0s infinite;
-        }
-        .circle8 {
-            width: 1466px;
-            height: 885px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_2 11.8s linear 0s infinite;
-        }
-        .circle9 {
-            width: 1599px;
-            height: 965px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_1 12s linear 0s infinite;
-        }
-        .circle10 {
-            width: 1962px;
-            height: 1196px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_2 11.8s linear 0s infinite;
-        }
-        .circle11 {
-            width: 2001px;
-            height: 1205px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_1 12s linear 0s infinite;
-        }
-        .circle12 {
-            width: 1184px;
-            height: 723px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_2 11.8s linear 0s infinite ,around_1 10s linear 0s infinite;
-        }
-        .circle13 {
-            width: 1539px;
-            height: 942px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: circle_1 12s linear 0s infinite;
-        }
-    }
+
     //獎池圖
     .imgBox {
         width: 910px;
