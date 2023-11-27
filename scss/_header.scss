@@ -53,35 +53,13 @@ header {
         z-index: 10;
 
         .topBar {
-            width: 669px;
-            height: 567px;
+            width: 100%;
+            height: 41px;
             position: absolute;
-            top: -407px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: skakeBub 15s linear 0s infinite;
-            @keyframes skakeBub {
-                0% {
-                    width: 669px;
-                    height: 567px;
-                }
-                5% {
-                    width: 660px;
-                    height: 600px;
-                }
-                10% {
-                    width: 600px;
-                    height: 560px;
-                }
-                50% {
-                    width: 760px;
-                    height: 610px;
-                }
-                100% {
-                    width: 669px;
-                    height: 567px;
-                }
-            }
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient( to right, #a97849 0%, #e6c77a 29%, #fffadd 50%, #e6c77a 66%, #a97849 100%, );
         }
 
         .logoBox {
@@ -90,7 +68,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 8px;
+            padding-top: 4px;
             margin: 0 auto;
             position: relative;
 
