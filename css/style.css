@@ -105,6 +105,16 @@ main {
   background-size: contain;
 }
 
+.info_BG .imgBox .star {
+  background: url("../images/star.gif") no-repeat center;
+  background-size: contain;
+}
+
+.info_BG .imgBox .coin {
+  background: url("../images/coin.gif") no-repeat center;
+  background-size: contain;
+}
+
 .info_BG .imgBox .scale {
   background: url("../images/scale.png") no-repeat center;
   background-size: contain;
@@ -130,7 +140,7 @@ main {
 
 .info_BG {
   background: url("../images/info_BG.png") no-repeat top center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .info_BG .topStar {
@@ -282,7 +292,7 @@ html body header.infoHeader {
 }
 html body header.infoHeader .topBar {
   width: 100%;
-  height: 41px;
+  height: 42px;
   position: absolute;
   top: 0;
   left: 0;
@@ -307,6 +317,10 @@ html body header.infoHeader .logoBox {
   position: relative;
 }
 html body header.infoHeader .logoBox img {
+  width: 140px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
   cursor: pointer;
 }
 html body .home {
@@ -2702,6 +2716,20 @@ html body .info_BG .imgBox .title {
   position: absolute;
   top: 100px;
   left: 236px;
+}
+html body .info_BG .imgBox .star {
+  width: 505px;
+  height: 100px;
+  position: absolute;
+  top: 75px;
+  left: 210px;
+}
+html body .info_BG .imgBox .coin {
+  width: 92px;
+  height: 91px;
+  position: absolute;
+  top: 196px;
+  left: 52px;
 }
 html body .info_BG .imgBox ul {
   width: 100%;
