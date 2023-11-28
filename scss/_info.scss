@@ -801,23 +801,26 @@
                     background-position-y: 90%;
                 }
                 &.anime_1 {
-                    animation: numMove_1 3s ease-in-out 2s alternate-reverse infinite;
+                    animation: numMove_1 5s ease-in-out 2s alternate-reverse infinite;
                 }
                 @keyframes numMove_1 {
                     0% {
-                        background-position-y: 2%;
+                        background-position-y: 1%;
                     }
                     20% {
                         background-position-y: 0;
                     }
                     80% {
-                        background-position-y: 10%;
+                        background-position-y: 80%;
+                    }
+                    90% {
+                        background-position-y: 79%;
                     }
                     95% {
-                        background-position-y: 12%;
+                        background-position-y: 81%;
                     }
                     100% {
-                        background-position-y: 10%;
+                        background-position-y: 80%;
                     }
                 }
                 &.anime_2 {
@@ -825,19 +828,22 @@
                 }
                 @keyframes numMove_2 {
                     0% {
-                        background-position-y: 2%;
+                        background-position-y: 1%;
                     }
                     20% {
                         background-position-y: 0;
                     }
                     80% {
-                        background-position-y: 10%;
+                        background-position-y: 90%;
+                    }
+                    90% {
+                        background-position-y: 89%;
                     }
                     95% {
-                        background-position-y: 12%;
+                        background-position-y: 91%;
                     }
                     100% {
-                        background-position-y: 10%;
+                        background-position-y: 90%;
                     }
                 }
             }
