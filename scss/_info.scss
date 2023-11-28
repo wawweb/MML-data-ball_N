@@ -170,7 +170,6 @@
                             @include redBtn;
 
                             &.time {
-
                                 i {
                                     display: block;
                                     width: 12px;
@@ -190,7 +189,8 @@
                                 left: 50%;
                                 transform: translateX(-50%);
                                 display: none;
-
+                                padding: 0 30px;
+                                
                                 &.display {
                                     display: flex;
                                 }
@@ -205,6 +205,9 @@
                                         transform: scaleY(-1);
                                     }
                                 }
+                            }
+                            &.download {
+                                padding: 0 40px;
                             }
                         }
                     }

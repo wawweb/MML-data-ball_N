@@ -2136,6 +2136,7 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more 
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   display: none;
+  padding: 0 30px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more:hover, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more:active, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
@@ -2155,6 +2156,9 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more 
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more i.turn {
   -webkit-transform: scaleY(-1);
           transform: scaleY(-1);
+}
+html body .infoWrap article .content .immediateBox .immInfo .btnBox button.download {
+  padding: 0 40px;
 }
 html body .infoWrap article .content .lotteryBox {
   width: 850px;
