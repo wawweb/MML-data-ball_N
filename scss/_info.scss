@@ -487,13 +487,13 @@
 
     // 上方背景
     .topStar {
-        width: 1618px;
-        height: 660px;
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        animation: flash_1 20s ease-out infinite;
+        // animation: flash_1 20s ease-out infinite;
         @keyframes flash_1 {
             0% {
                 transform: translate(-50%,0%);
@@ -514,143 +514,181 @@
                 transform: translate(-50%,0%);
             }
         }
-        .star {
+        .airFlow {
+            width: 1920px;
+            height: 565px;
+            // z-index: 5;
+            top: -15px;
+            right: 0px;
+            position: absolute;
+            animation: airFlow 1s linear infinite;
+            @keyframes airFlow {
+                0% {
+                    opacity: 0;
+                    transform: scale(0) rotate(0);
+                }
+                5% {
+                    opacity: 1;
+                    transform: scale(1) rotate(0);
+                }
+                10% {
+                    opacity: 1;
+                    transform: scale(1) rotate(0);
+                }
+                30% {
+                    opacity: 0;
+                    transform: scale(1) rotate(0);
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+        // 光圈git
+        .aperture {
+            width: 501px;
+            height: 501px;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+        .ball {
             display: inline-block;
-            width: 15px;
-            height: 15px;
-            border-radius: 1px;
-            background: #ffffff;
+            width: 123px;
+            height: 123px;
             top: 0px;
             right: 0px;
             position: absolute;
-            transform-origin: 100% 0;
-            animation: star-move 5s infinite linear normal;
-            opacity: 0;
-            filter: drop-shadow(0px 0px 10px #5bfedd) contrast(200%);
 
-            &:after {
-                content: '';
-                position: absolute;
-                top: 2px;
-                left: 10px;
-                border: 1px solid ;
-                border-width: 5px 150px 5px 150px;
-                border-color: transparent transparent transparent #fff;
-                transform: rotate(-45deg) translate3d(1px, -1px, 0);
-                transform-origin: 0% 100%;
-                animation: shooting 10s infinite linear normal;
-            }
-            &.star1 {
-                top: 300px;
+            &.ball1 {
+                top: 20px;
                 left: 250px;
                 animation-delay: 1.2s;
-    
-                &::after {
-                    border-color: transparent transparent transparent #fff;
-                    animation-delay: 3.5s;
+                animation: ball1 2s infinite linear normal;
+                
+                @keyframes ball1 {
+                    0% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    20% {
+                        transform: scale(0.8) rotate(-25deg) translate3d(-50px, 50px, 0);
+                    }
+                    50% {
+                        transform: scale(1) rotate(25deg) translate3d(-100px, 100px, 0);
+                    }
+                    100% {
+                        transform: translate3d(0, 0, 0);
+                    }
                 }
             }
-            &.star2 {
-                top: 500px;
-                right: 100px;
+            &.ball2 {
+                top: 460px;
+                left: 170px;
                 animation-delay: 1s;
-    
-                &::after {
-                    border-color: transparent transparent transparent #fff;
-                    animation-delay: 4s;
+                animation: ball2 2s infinite linear normal;
+                
+                @keyframes ball2 {
+                    0% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    20% {
+                        transform: scale(0.5) rotate(-25deg) translate3d(-50px, 50px, 0);
+                    }
+                    50% {
+                        transform: scale(1) rotate(25deg) translate3d(-100px, -200px, 0);
+                    }
+                    100% {
+                        transform: translate3d(0, 0, 0);
+                    }
                 }
             }
-            &.star3 {
-                top: 600px;
-                right: 20px;
+            &.ball3 {
+                top: 210px;
+                left: 20px;
                 animation-delay: 3.5s;
-    
-                &::after {
-                    border-color: transparent transparent transparent #fff;
-                    animation-delay: 4.5s;
+                animation: ball3 2s infinite linear normal;
+                
+                @keyframes ball3 {
+                    0% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    20% {
+                        transform: scale(0.2) rotate(-25deg) translate3d(100px, -150px, 0);
+                    }
+                    50% {
+                        transform: scale(1) rotate(25deg) translate3d(200px, -200px, 0);
+                    }
+                    100% {
+                        transform: translate3d(0, 0, 0);
+                    }
                 }
             }
-            &.star4 {
+            &.ball4 {
                 top: 100px;
-                right: 600px;
+                right: 100px;
                 animation-delay: 1.5s;
-    
-                &::after {
-                    border-color: transparent transparent transparent #fff;
-                    animation-delay: 1.5s;
+                animation: ball4 2s infinite linear normal;
+                
+                @keyframes ball4 {
+                    0% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    20% {
+                        transform: scale(0.7) rotate(-25deg) translate3d(-100px, -150px, 0);
+                    }
+                    50% {
+                        transform: scale(1) rotate(25deg) translate3d(-200px, 200px, 0);
+                    }
+                    100% {
+                        transform: translate3d(0, 0, 0);
+                    }
                 }
             }
-            &.star5 {
-                top: 10px;
-                left: 190px;
+            &.ball5 {
+                top: 400px;
+                right: 190px;
                 animation-delay: 9s;
-            
-                &:after {
-                    border-color: transparent transparent transparent rgb(255, 255, 255);
-                    animation-delay: 5s;
+                animation: ball5 2s infinite linear normal;
+                
+                @keyframes ball5 {
+                    0% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    20% {
+                        transform: scale(0.9) rotate(-25deg) translate3d(-50px, 150px, 0);
+                    }
+                    50% {
+                        transform: scale(1) rotate(25deg) translate3d(-100px, 100px, 0);
+                    }
+                    100% {
+                        transform: translate3d(0, 0, 0);
+                    }
                 }
             }
-            &.star6 {
-                top: 380px;
-                left: 40px;
+            &.ball6 {
+                top: 190px;
+                right: 300px;
                 animation-delay: 8.5s;
-            
-                &:after {
-                    border-color: transparent transparent transparent rgb(255, 255, 255);
-                    animation-delay: 5s;
-                }
-            }
-            &.star7 {
-                top: 220px;
-                left: 180px;
-                animation-delay: 2.5s;
-            
-                &:after {
-                    border-color: transparent transparent transparent rgb(255, 255, 255);
-                    animation-delay: 5s;
-                }
-            }
-            &.star8 {
-                top: 120px;
-                left: 40px;
-                animation-delay: 6.5s;
-            
-                &:after {
-                    border-color: transparent transparent transparent rgb(255, 255, 255);
-                    animation-delay: 5s;
-                }
-            }
-            &.star9 {
-                top: 200px;
-                left: 1600px;
-                animation-delay: 2.5s;
-            
-                &:after {
-                    border-color: transparent transparent transparent rgb(255, 255, 255);
-                    animation-delay: 5s;
-                }
-            }
-            &.star10 {
-                top: 700px;
-                left: 1200px;
-                animation-delay: 1.5s;
-            
-                &:after {
-                    border-color: transparent transparent transparent rgb(255, 255, 255);
-                    animation-delay: 5s;
+                animation: ball6 2s infinite linear normal;
+                
+                @keyframes ball6 {
+                    0% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    20% {
+                        transform: scale(0.6) rotate(-25deg) translate3d(-50px, 50px, 0);
+                    }
+                    50% {
+                        transform: scale(1) rotate(25deg) translate3d(250px, 100px, 0);
+                    }
+                    100% {
+                        transform: translate3d(0, 0, 0);
+                    }
                 }
             }
         }
 
-
-        @keyframes shooting {
-            50% {
-                transform: scale(1) rotate(-45deg) translate(0px, 0px);
-            }
-            100% {
-                transform: scale(0.5) rotate(-45deg) translate(0px, -1px);
-            }
-        }
         @keyframes star-move {
             0% {
                 opacity: 0;
@@ -764,21 +802,43 @@
                     background-position-y: 90%;
                 }
                 &.anime_1 {
-                    animation: numMove_1 3s ease-in-out 0s alternate-reverse infinite;
+                    animation: numMove_1 3s ease-in-out 2s alternate-reverse infinite;
                 }
-
                 @keyframes numMove_1 {
                     0% {
-                        background-position-y: 0;
+                        background-position-y: 2%;
                     }
                     20% {
                         background-position-y: 0;
                     }
                     80% {
-                        background-position-y: 90%;
+                        background-position-y: 10%;
+                    }
+                    95% {
+                        background-position-y: 12%;
                     }
                     100% {
-                        background-position-y: 90%;
+                        background-position-y: 10%;
+                    }
+                }
+                &.anime_2 {
+                    animation: numMove_2 5s ease-in-out 0s alternate-reverse infinite;
+                }
+                @keyframes numMove_2 {
+                    0% {
+                        background-position-y: 2%;
+                    }
+                    20% {
+                        background-position-y: 0;
+                    }
+                    80% {
+                        background-position-y: 10%;
+                    }
+                    95% {
+                        background-position-y: 12%;
+                    }
+                    100% {
+                        background-position-y: 10%;
                     }
                 }
             }
@@ -819,6 +879,7 @@
                 transform: translateY(-50%);
                 animation: progress_1  5s linear 0s 1;
                 animation-fill-mode: forwards;
+                border-radius: 0 20px 20px 0;
 
                 @keyframes progress_1 {
                     0% {
@@ -826,27 +887,32 @@
                     }
                     10% {
                         width: 500px;
+                        filter: drop-shadow(0px 0px 10px #5bfedd) contrast(100%);
                     }
                     30% {
                         width: 600px;
+                        filter: drop-shadow(0px 0px 0px #5bfedd) contrast(100%);
                     }
                     40% {
                         width: 610px;
+                        filter: drop-shadow(0px 0px 10px #5bfedd) contrast(100%);
                     }
                     50% {
                         width: 620px;
+                        filter: drop-shadow(0px 0px 0px #5bfedd) contrast(100%);
                     }
                     100% {
                         width: 630px;
+                        filter: drop-shadow(0px 0px 10px #5bfedd) contrast(100%);
                     }
                 }
 
                 .front {
-                    width: 65px;
-                    height: 90px;
+                    width: 30px;
+                    height: 30px;
                     position: absolute;
-                    right: -36px;
-                    top: -33px;
+                    right: -24px;
+                    top: -5px;
                 }
             }
         }

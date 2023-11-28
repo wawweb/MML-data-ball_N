@@ -8,6 +8,38 @@
 .mainWrap .imgBox li {
     background: url('../images/num_gold.png') no-repeat;
 }
+.info_BG .topStar .airFlow {
+    background: url('../images/airflow.png') no-repeat;
+    background-size: contain;
+}
+.info_BG .topStar .aperture {
+    background: url('../images/aperture.gif') no-repeat;
+    background-size: contain;
+}
+.info_BG .topStar .ball1 {
+    background: url('../images/ball1.png') no-repeat;
+    background-size: contain;
+}
+.info_BG .topStar .ball2 {
+    background: url('../images/ball2.png') no-repeat;
+    background-size: contain;
+}
+.info_BG .topStar .ball3 {
+    background: url('../images/ball3.png') no-repeat;
+    background-size: contain;
+}
+.info_BG .topStar .ball4 {
+    background: url('../images/ball4.png') no-repeat;
+    background-size: contain;
+}
+.info_BG .topStar .ball5 {
+    background: url('../images/ball5.png') no-repeat;
+    background-size: contain;
+}
+.info_BG .topStar .ball6 {
+    background: url('../images/ball6.png') no-repeat;
+    background-size: contain;
+}
 .info_BG .bgStar {
     background: url('../images/background_star.png') no-repeat top center;
     background-size: contain;
@@ -36,7 +68,7 @@
     background: url('../images/progress.png') no-repeat;
 }
 .info_BG .imgBox .scale .progress .front {
-    background: url('../images/front2.gif') no-repeat center;
+    background: url('../images/bubble.gif') no-repeat center;
     background-size: contain;
 }
 .info_BG .imgBox li.empty {
@@ -50,15 +82,6 @@
 //info
 .info_BG {
     background: url('../images/info_BG.png') no-repeat top center;
-    background-size: contain;
-}
-.info_BG .topStar {
-    background: url('../images/top_bg.png') no-repeat top center;
-    background-size: cover;
-}
-.info_BG .bottomStar {
-    background: url('../images/bottom_bg.png') no-repeat top center;
-    background-size: cover;
 }
 .infoWrap .immInfo .time_ic {
     background: url('../images/info_timeIC.png') no-repeat;
