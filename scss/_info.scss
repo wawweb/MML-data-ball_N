@@ -490,6 +490,7 @@
         left: 50%;
         transform: translateX(-50%);
         // animation: flash_1 20s ease-out infinite;
+
         @keyframes flash_1 {
             0% {
                 transform: translate(-50%,0%);
@@ -518,6 +519,7 @@
             right: 0px;
             position: absolute;
             animation: airFlow 1s linear infinite;
+
             @keyframes airFlow {
                 0% {
                     opacity: 0;
@@ -573,6 +575,9 @@
                     50% {
                         transform: scale(1) rotate(25deg) translate3d(-100px, 100px, 0);
                     }
+                    80% {
+                        transform: scale(1) rotate(-25deg) translate3d(-250px, 150px, 0);
+                    }
                     100% {
                         transform: translate3d(0, 0, 0);
                     }
@@ -589,10 +594,13 @@
                         transform: translate3d(0, 0, 0);
                     }
                     20% {
-                        transform: scale(0.5) rotate(-25deg) translate3d(-50px, 50px, 0);
+                        transform: scale(0.8) rotate(-25deg) translate3d(-50px, 50px, 0);
                     }
                     50% {
-                        transform: scale(1) rotate(25deg) translate3d(-100px, -200px, 0);
+                        transform: scale(1) rotate(25deg) translate3d(-120px, -200px, 0);
+                    }
+                    80% {
+                        transform: scale(1) rotate(-25deg) translate3d(-150px, 150px, 0);
                     }
                     100% {
                         transform: translate3d(0, 0, 0);
@@ -610,10 +618,13 @@
                         transform: translate3d(0, 0, 0);
                     }
                     20% {
-                        transform: scale(0.2) rotate(-25deg) translate3d(100px, -150px, 0);
+                        transform: scale(0.8) rotate(-25deg) translate3d(100px, -150px, 0);
                     }
                     50% {
                         transform: scale(1) rotate(25deg) translate3d(200px, -200px, 0);
+                    }
+                    80% {
+                        transform: scale(1) rotate(25deg) translate3d(250px, 150px, 0);
                     }
                     100% {
                         transform: translate3d(0, 0, 0);
@@ -631,10 +642,13 @@
                         transform: translate3d(0, 0, 0);
                     }
                     20% {
-                        transform: scale(0.7) rotate(-25deg) translate3d(-100px, -150px, 0);
+                        transform: scale(0.7) rotate(-25deg) translate3d(-100px, -180px, 0);
                     }
                     50% {
-                        transform: scale(1) rotate(25deg) translate3d(-200px, 200px, 0);
+                        transform: scale(1.1) rotate(25deg) translate3d(-200px, 150px, 0);
+                    }
+                    80% {
+                        transform: scale(1) rotate(25deg) translate3d(200px, 150px, 0);
                     }
                     100% {
                         transform: translate3d(0, 0, 0);
@@ -652,10 +666,13 @@
                         transform: translate3d(0, 0, 0);
                     }
                     20% {
-                        transform: scale(0.9) rotate(-25deg) translate3d(-50px, 150px, 0);
+                        transform: scale(0.9) rotate(-25deg) translate3d(-150px, 150px, 0);
                     }
                     50% {
-                        transform: scale(1) rotate(25deg) translate3d(-100px, 100px, 0);
+                        transform: scale(1.1) rotate(25deg) translate3d(100px, 100px, 0);
+                    }
+                    80% {
+                        transform: scale(1) rotate(25deg) translate3d(-120px, -110px, 0);
                     }
                     100% {
                         transform: translate3d(0, 0, 0);
@@ -678,41 +695,15 @@
                     50% {
                         transform: scale(1) rotate(25deg) translate3d(250px, 100px, 0);
                     }
+                    80% {
+                        transform: scale(0.6) rotate(25deg) translate3d(250px, -100px, 0);
+                    }
                     100% {
                         transform: translate3d(0, 0, 0);
                     }
                 }
             }
         }
-
-        @keyframes star-move {
-            0% {
-                opacity: 0;
-                transform: scale(0) rotate(0) translate3d(0, 0, 0);
-            }
-            5% {
-                opacity: 1;
-                transform: scale(1) rotate(0) translate3d(-100px, 100px, 0);
-            }
-            10% {
-                opacity: 0;
-                transform: scale(1) rotate(0) translate3d(-200px, 200px, 0);
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-    }
-
-    // 下方背景
-    .bottomStar {
-        width: 1850px;
-        height: 1287px;
-        position: absolute;
-        top: 657px;
-        left: 50%;
-        transform: translateX(-50%);
-        animation: flash_1 20s ease-out infinite;
     }
 
     //獎池圖
@@ -726,6 +717,7 @@
         transform: translateX(-50%);
         z-index: 5;
         animation: rotate_1 0.5s linear infinite;
+
         @keyframes rotate_1 {
             0% {
                 transform: translateX(-50%) rotate(0.5deg);
@@ -859,6 +851,7 @@
             top: 342px;
             left: 138px;
             animation: shock_1 0.8s linear infinite;
+
             @keyframes shock_1 {
                 0% {
                     transform: translate(0%,0%);
