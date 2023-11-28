@@ -252,11 +252,11 @@ html body.info::-webkit-scrollbar {
   height: 6px;
 }
 html body.info::-webkit-scrollbar-track {
-  background: transparent;
+  background: #d9d9d9;
   border-radius: 10px;
 }
 html body.info::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: #c6aa5e;
   border-radius: 10px;
 }
 html body header {
@@ -807,19 +807,17 @@ html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .b
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn {
   width: 132px;
   height: 47px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to top, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
   border-radius: 5px;
   border: solid 1px #ffd4ad;
-  color: #fffefe;
+  color: #9b0700;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
 }
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn:hover, html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn:active, html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to bottom, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
 }
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox button:not(.nextBtn) {
   width: auto;
@@ -884,19 +882,17 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .c
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button {
   width: 140px;
   height: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to top, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
   border-radius: 5px;
   border: solid 1px #ffd4ad;
-  color: #fffefe;
+  color: #9b0700;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button:hover, html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button:active, html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to bottom, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .fastBox {
   width: 100%;
@@ -1903,8 +1899,10 @@ html body .infoWrap article .content {
   margin: 0 auto;
 }
 html body .infoWrap article .content .title {
-  width: 100%;
+  width: 850px;
   height: 45px;
+  background: -webkit-gradient(linear, left top, right top, from(#a97849), color-stop(8%, #e6c77a), color-stop(25%, #fffadd), color-stop(50%, #e6c77a), color-stop(84%, #a97849), to(#e6c77a));
+  background: linear-gradient(to right, #a97849 0%, #e6c77a 8%, #fffadd 25%, #e6c77a 50%, #a97849 84%, #e6c77a 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1915,16 +1913,8 @@ html body .infoWrap article .content .title {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin-bottom: 20px;
-}
-html body .infoWrap article .content .title .ornament {
-  width: 213px;
-  height: 49px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
 }
 html body .infoWrap article .content .title p {
   color: #000000;
@@ -1940,6 +1930,7 @@ html body .infoWrap article .content .immediateBox {
   border: 0.1px solid #946938;
   overflow: hidden;
   margin: 0 auto 30px;
+  border-radius: 0 0 10px 10px;
 }
 html body .infoWrap article .content .immediateBox .immInfo {
   width: 100%;
@@ -1981,7 +1972,7 @@ html body .infoWrap article .content .immediateBox .immInfo .betBox {
   width: 100%;
   height: 695px;
   margin-bottom: 20px;
-  overflow-y: auto;
+  overflow-y: overlay;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   -ms-scroll-chaining: none;
@@ -1992,11 +1983,11 @@ html body .infoWrap article .content .immediateBox .immInfo .betBox::-webkit-scr
   height: 6px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox::-webkit-scrollbar-track {
-  background: transparent;
+  background: #d9d9d9;
   border-radius: 10px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: #c6aa5e;
   border-radius: 10px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox.active {
@@ -2087,10 +2078,9 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button {
   width: auto;
   min-width: 98px;
   height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#2665c4), to(#1d3e8d));
-  background: linear-gradient(to top, #2665c4 0%, #1d3e8d 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#b17d4a), color-stop(98%, #d5c382));
+  background: linear-gradient(to top, #b17d4a 0%, #d5c382 98%);
   border-radius: 5px;
-  border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 15px;
   font-weight: bold;
@@ -2106,16 +2096,16 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button {
           justify-content: center;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button:hover, html body .infoWrap article .content .immediateBox .immInfo .btnBox button:active, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2665c4), to(#1d3e8d));
-  background: linear-gradient(to bottom, #2665c4 0%, #1d3e8d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b17d4a), color-stop(98%, #d5c382));
+  background: linear-gradient(to bottom, #b17d4a 0%, #d5c382 98%);
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.time span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #120910;
+  background: #ffffff;
   border-radius: 3px;
-  color: #ffcd61;
+  color: #9b0700;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2134,15 +2124,13 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button.time 
   height: 22px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to top, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
   border-radius: 5px;
   border: solid 1px #ffd4ad;
-  color: #fffefe;
+  color: #9b0700;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2150,8 +2138,8 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more 
   display: none;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more:hover, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more:active, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to bottom, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more.display {
   display: -webkit-box;
@@ -2177,6 +2165,7 @@ html body .infoWrap article .content .lotteryBox {
   border: 0.1px solid #946938;
   overflow: hidden;
   margin: 0 auto 30px;
+  border-radius: 0 0 10px 10px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox {
   width: 100%;
@@ -2191,11 +2180,11 @@ html body .infoWrap article .content .lotteryBox .outerBox::-webkit-scrollbar {
   height: 6px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox::-webkit-scrollbar-track {
-  background: transparent;
+  background: #d9d9d9;
   border-radius: 10px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: #c6aa5e;
   border-radius: 10px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox.active {
@@ -2397,15 +2386,13 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox 
 html body .infoWrap article .content .lotteryBox .more {
   width: 154px;
   height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to top, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
   border-radius: 5px;
   border: solid 1px #ffd4ad;
-  color: #fffefe;
+  color: #9b0700;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2416,8 +2403,8 @@ html body .infoWrap article .content .lotteryBox .more {
   margin: 25px auto;
 }
 html body .infoWrap article .content .lotteryBox .more:hover, html body .infoWrap article .content .lotteryBox .more:active, html body .infoWrap article .content .lotteryBox .more.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #f5e7b5), color-stop(30%, #e2c679), color-stop(78%, #fff8de), to(#f5e7b5));
+  background: linear-gradient(to bottom, #f5e7b5 3%, #e2c679 30%, #fff8de 78%, #f5e7b5 100%);
 }
 html body .infoWrap article .content .lotteryBox .more.display {
   display: -webkit-box;
@@ -2914,6 +2901,36 @@ html body .info_BG .imgBox {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 5;
+  -webkit-animation: rotate_1 0.5s linear infinite;
+          animation: rotate_1 0.5s linear infinite;
+}
+@-webkit-keyframes rotate_1 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0.5deg);
+            transform: translateX(-50%) rotate(0.5deg);
+  }
+  50% {
+    -webkit-transform: translateX(-50%) rotate(-0.5deg);
+            transform: translateX(-50%) rotate(-0.5deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(0.5deg);
+            transform: translateX(-50%) rotate(0.5deg);
+  }
+}
+@keyframes rotate_1 {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0.5deg);
+            transform: translateX(-50%) rotate(0.5deg);
+  }
+  50% {
+    -webkit-transform: translateX(-50%) rotate(-0.5deg);
+            transform: translateX(-50%) rotate(-0.5deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(0.5deg);
+            transform: translateX(-50%) rotate(0.5deg);
+  }
 }
 html body .info_BG .imgBox .title {
   width: 448px;
